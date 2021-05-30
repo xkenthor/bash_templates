@@ -1,7 +1,7 @@
 #!/bin/bash
-source_directory="/home/blackbird71/"
-dest_directory="/media/blackbird71/Base/"
-folder_list=(Documents Music Downloads Pictures Videos)
+source_directory="/home/username"
+dest_directory="/media/volume"
+folder_list=(Documents Music Downloads Pictures Videos Public)
 
 for folder in ${folder_list[@]};
 do
@@ -29,6 +29,6 @@ do
         mkdir $dest_path
     fi
 
-    ln -s $dest_path $source_path
+    ln -sf $dest_path $source_path
 
 done
