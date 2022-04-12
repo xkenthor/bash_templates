@@ -6,3 +6,4 @@ set guidestripe 80
 set linenumbers
 
 set regexp
+set nohelp
